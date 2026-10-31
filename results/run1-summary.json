@@ -1,0 +1,695 @@
+{
+  "docs_commit": "c4055f178a80945f2f0590b75b365a4c234d0186",
+  "docs_snapshot_date": "2026-10-31",
+  "docs_source": "https://github.com/kubernetes/website/tree/c4055f178a80945f2f0590b75b365a4c234d0186/content/en/docs/reference/command-line-tools-reference/feature-gates",
+  "docs_tree_truncated": false,
+  "kep_commit": "a904b50283fe82d0d4f46988d0fd9d1a35a86c25",
+  "kep_snapshot_date": "2026-10-31",
+  "kep_source": "https://github.com/kubernetes/enhancements/tree/a904b50283fe82d0d4f46988d0fd9d1a35a86c25/keps",
+  "metrics": {
+    "P1": {
+      "agree": 147,
+      "n": 150,
+      "share": 0.98
+    },
+    "P1_all_gates": {
+      "agree": 162,
+      "n": 172,
+      "share": 0.9418604651162791
+    },
+    "P2": {
+      "docs_later": 7,
+      "mismatches": 22,
+      "n_pairs": 558,
+      "share": 0.3181818181818182
+    },
+    "P3": {
+      "n": 150,
+      "not_implemented": 26,
+      "share": 0.17333333333333334,
+      "status_hist": {
+        "implementable": 26
+      }
+    },
+    "P4": {
+      "V": 37,
+      "missing_latest": 19,
+      "n": 256,
+      "n_implementable": 275,
+      "share": 0.375,
+      "stale": 96
+    },
+    "V": 37,
+    "descriptives": {
+      "agreement_by_stage": {
+        "alpha": {
+          "agree": 200,
+          "diff_hist": {
+            "-1": 5,
+            "-2": 1,
+            "-4": 1,
+            "-5": 1,
+            "-6": 2,
+            "0": 200,
+            "1": 1,
+            "16": 1,
+            "3": 1
+          },
+          "n": 213
+        },
+        "beta": {
+          "agree": 189,
+          "diff_hist": {
+            "-1": 1,
+            "-2": 2,
+            "-4": 1,
+            "-5": 1,
+            "0": 189,
+            "13": 1
+          },
+          "n": 195
+        },
+        "stable": {
+          "agree": 147,
+          "diff_hist": {
+            "0": 147,
+            "1": 1,
+            "3": 2
+          },
+          "n": 150
+        }
+      },
+      "case_only_mismatches": [
+        "CSIMigrationRbd",
+        "InPlacePodVerticalScalingExclusiveCPUS",
+        "InTreePluginRbdUnregister",
+        "ReduceDefaultCrashLoopBackoffDecay",
+        "setHostnameAsFQDN"
+      ],
+      "docs_coverage_by_entry_release": {
+        "10": [
+          9,
+          2
+        ],
+        "11": [
+          12,
+          2
+        ],
+        "12": [
+          11,
+          5
+        ],
+        "13": [
+          5,
+          3
+        ],
+        "14": [
+          14,
+          8
+        ],
+        "15": [
+          12,
+          6
+        ],
+        "16": [
+          13,
+          7
+        ],
+        "17": [
+          7,
+          1
+        ],
+        "18": [
+          11,
+          8
+        ],
+        "19": [
+          9,
+          5
+        ],
+        "20": [
+          15,
+          12
+        ],
+        "21": [
+          25,
+          25
+        ],
+        "22": [
+          16,
+          16
+        ],
+        "23": [
+          20,
+          18
+        ],
+        "24": [
+          10,
+          8
+        ],
+        "25": [
+          16,
+          13
+        ],
+        "26": [
+          16,
+          12
+        ],
+        "27": [
+          14,
+          11
+        ],
+        "28": [
+          23,
+          16
+        ],
+        "29": [
+          21,
+          16
+        ],
+        "3": [
+          2,
+          1
+        ],
+        "30": [
+          20,
+          14
+        ],
+        "31": [
+          15,
+          11
+        ],
+        "32": [
+          23,
+          20
+        ],
+        "33": [
+          26,
+          21
+        ],
+        "34": [
+          19,
+          14
+        ],
+        "35": [
+          21,
+          18
+        ],
+        "36": [
+          25,
+          18
+        ],
+        "37": [
+          23,
+          21
+        ],
+        "4": [
+          3,
+          2
+        ],
+        "5": [
+          3,
+          0
+        ],
+        "6": [
+          3,
+          0
+        ],
+        "7": [
+          5,
+          0
+        ],
+        "8": [
+          15,
+          5
+        ],
+        "9": [
+          7,
+          0
+        ]
+      },
+      "kep_stage_vs_docs_current": {
+        "alpha|alpha": 10,
+        "alpha|deprecated": 1,
+        "alpha|removed": 2,
+        "beta|alpha": 24,
+        "beta|beta": 37,
+        "beta|removed": 2,
+        "deprecated|deprecated": 3,
+        "disabled|deprecated": 2,
+        "removed|removed": 1,
+        "stable|beta": 7,
+        "stable|removed": 92,
+        "stable|stable": 57
+      },
+      "latest_hist": {
+        "11": 2,
+        "12": 1,
+        "13": 1,
+        "14": 5,
+        "15": 5,
+        "16": 5,
+        "17": 3,
+        "18": 5,
+        "19": 14,
+        "20": 14,
+        "21": 16,
+        "22": 20,
+        "23": 15,
+        "24": 36,
+        "25": 16,
+        "26": 17,
+        "27": 23,
+        "28": 16,
+        "29": 14,
+        "30": 21,
+        "31": 17,
+        "32": 12,
+        "33": 25,
+        "34": 27,
+        "35": 27,
+        "36": 36,
+        "37": 50,
+        "38": 90,
+        "None": 110
+      },
+      "mismatches": [
+        {
+          "docs": 30,
+          "gate": "MutatingAdmissionPolicy",
+          "kep": 32,
+          "number": "3962",
+          "stage": "alpha"
+        },
+        {
+          "docs": 20,
+          "gate": "CronJobControllerV2",
+          "kep": 4,
+          "number": "19",
+          "stage": "alpha"
+        },
+        {
+          "docs": 21,
+          "gate": "CronJobControllerV2",
+          "kep": 8,
+          "number": "19",
+          "stage": "beta"
+        },
+        {
+          "docs": 22,
+          "gate": "CronJobControllerV2",
+          "kep": 21,
+          "number": "19",
+          "stage": "stable"
+        },
+        {
+          "docs": 3,
+          "gate": "PodDisruptionBudget",
+          "kep": 4,
+          "number": "85",
+          "stage": "alpha"
+        },
+        {
+          "docs": 32,
+          "gate": "DRAAdminAccess",
+          "kep": 33,
+          "number": "5018",
+          "stage": "alpha"
+        },
+        {
+          "docs": 32,
+          "gate": "ComponentSLIs",
+          "kep": 29,
+          "number": "3466",
+          "stage": "stable"
+        },
+        {
+          "docs": 15,
+          "gate": "IPv6DualStack",
+          "kep": 20,
+          "number": "563",
+          "stage": "alpha"
+        },
+        {
+          "docs": 28,
+          "gate": "UserNamespacesSupport",
+          "kep": 25,
+          "number": "127",
+          "stage": "alpha"
+        },
+        {
+          "docs": 30,
+          "gate": "UserNamespacesSupport",
+          "kep": 35,
+          "number": "127",
+          "stage": "beta"
+        },
+        {
+          "docs": 25,
+          "gate": "DisableAcceleratorUsageMetrics",
+          "kep": 22,
+          "number": "1867",
+          "stage": "stable"
+        },
+        {
+          "docs": 23,
+          "gate": "PodAndContainerStatsFromCRI",
+          "kep": 29,
+          "number": "2371",
+          "stage": "alpha"
+        },
+        {
+          "docs": 28,
+          "gate": "NodeSwap",
+          "kep": 30,
+          "number": "2400",
+          "stage": "beta"
+        },
+        {
+          "docs": 4,
+          "gate": "DynamicKubeletConfig",
+          "kep": 8,
+          "number": "281",
+          "stage": "alpha"
+        },
+        {
+          "docs": 31,
+          "gate": "ProcMountType",
+          "kep": 33,
+          "number": "4265",
+          "stage": "beta"
+        },
+        {
+          "docs": 33,
+          "gate": "ImageVolume",
+          "kep": 34,
+          "number": "4639",
+          "stage": "beta"
+        },
+        {
+          "docs": 35,
+          "gate": "ImageVolumeWithDigest",
+          "kep": 36,
+          "number": "5365",
+          "stage": "alpha"
+        },
+        {
+          "docs": 32,
+          "gate": "InPlacePodVerticalScalingExclusiveCPUs",
+          "kep": 38,
+          "number": "5554",
+          "stage": "alpha"
+        },
+        {
+          "docs": 37,
+          "gate": "NodeLifecycleConditions",
+          "kep": 38,
+          "number": "5683",
+          "stage": "alpha"
+        },
+        {
+          "docs": 28,
+          "gate": "SchedulerQueueingHints",
+          "kep": 32,
+          "number": "4247",
+          "stage": "beta"
+        },
+        {
+          "docs": 21,
+          "gate": "VolumeCapacityPriority",
+          "kep": 20,
+          "number": "1845",
+          "stage": "alpha"
+        },
+        {
+          "docs": 25,
+          "gate": "NewVolumeManagerReconstruction",
+          "kep": 26,
+          "number": "3756",
+          "stage": "alpha"
+        }
+      ],
+      "n_gate_names_listed": 450,
+      "n_keps_with_gates": 392,
+      "n_listed_in_docs": 339,
+      "shared_gates": [
+        [
+          "APIServerIdentity",
+          [
+            "1965",
+            "2339"
+          ]
+        ],
+        [
+          "CPUManagerPolicyAlphaOptions",
+          [
+            "2625",
+            "2902",
+            "3327",
+            "4176",
+            "4540",
+            "4800",
+            "6122"
+          ]
+        ],
+        [
+          "CPUManagerPolicyBetaOptions",
+          [
+            "2625",
+            "2902",
+            "3327",
+            "4540",
+            "4800"
+          ]
+        ],
+        [
+          "CPUManagerPolicyOptions",
+          [
+            "2625",
+            "2902",
+            "3327",
+            "4540",
+            "4800"
+          ]
+        ],
+        [
+          "DeclarativeValidation",
+          [
+            "4153",
+            "5073"
+          ]
+        ],
+        [
+          "DynamicResourceAllocation",
+          [
+            "3063",
+            "3695",
+            "4381"
+          ]
+        ],
+        [
+          "GenericWorkload",
+          [
+            "4671",
+            "5710",
+            "5832"
+          ]
+        ],
+        [
+          "KubeletPodResources",
+          [
+            "1884",
+            "606"
+          ]
+        ],
+        [
+          "PodLevelResources",
+          [
+            "2837",
+            "5419",
+            "5526"
+          ]
+        ],
+        [
+          "PodSchedulingReadiness",
+          [
+            "3521",
+            "3838"
+          ]
+        ],
+        [
+          "TopologyManagerPolicyAlphaOptions",
+          [
+            "3545",
+            "6007"
+          ]
+        ],
+        [
+          "TopologyManagerPolicyOptions",
+          [
+            "3545",
+            "4622",
+            "6007"
+          ]
+        ],
+        [
+          "WorkloadWithJob",
+          [
+            "5547",
+            "6089"
+          ]
+        ]
+      ],
+      "stage_hist": {
+        "": 36,
+        "alpha": 135,
+        "alpha (deprecated)": 1,
+        "alpha|beta|stable": 1,
+        "beta": 103,
+        "deprecated": 4,
+        "disabled": 2,
+        "removed": 1,
+        "stable": 360
+      },
+      "status_hist": {
+        "deferred": 1,
+        "imlpemented": 1,
+        "implementable": 275,
+        "implemented": 296,
+        "implemented (alpha)": 1,
+        "provisional": 47,
+        "provisional|implementable|implemented|deferred|rejected|withdrawn|replaced": 1,
+        "rejected": 3,
+        "removed": 1,
+        "replaced": 5,
+        "superseded": 1,
+        "withdrawn": 11
+      },
+      "unmatched_gate_names": [
+        "APIServerAuthenticationToWebhooks",
+        "APIUnions",
+        "AdminNetworkPolicy",
+        "AggregatedDiscovery",
+        "AmbientCapabilities",
+        "CELValidatingAdmission",
+        "CRDAdditionalPrinterColumnCEL",
+        "CSIControllerGetNodeInfo",
+        "CSIGlobalMountReconstruction",
+        "CSIMigrationCephfs",
+        "CSIMigrationRbd",
+        "CSIMigration{vendor}",
+        "CSIVolumeSupportFSGroup",
+        "CgroupNamespacesSupport",
+        "CgroupOptions",
+        "ClientExecProxy",
+        "CloudWebhookServer",
+        "ClusterResourceClaimTemplates",
+        "ClusterTrustBundleSelector",
+        "CompatibilityVersions",
+        "ConditionalAuthorization",
+        "ConsistentGetFromCache",
+        "ContainerUlimits",
+        "CronJobCreationAnnotation",
+        "CrossNamespaceSourceProvisioning",
+        "DRAAdminControlledDeviceAttributes",
+        "DRAExtendedResourceCapacity",
+        "DRAPreemption",
+        "DRAResourceSliceMixins",
+        "DRASharedConsumableCapacity",
+        "DRASharingAffinity",
+        "DeclarativeValidationExtensionsInOpenAPI",
+        "DeploymentPodReplacementPolicy",
+        "DeprecatedKubeletStreamingAPI",
+        "DisruptionPolicyInPriorityClass",
+        "DownwardAPIAssignedResources",
+        "DualStackAPIServer",
+        "DynamicContainers",
+        "DynamicNodeLocalEphemeralVolumes",
+        "EnableClusterToMasterTraffic",
+        "EvictionRequestAPI",
+        "ExecEnvVar",
+        "ExecProbeTimeouts",
+        "ExecRequestID",
+        "ExtendedWorkloadConditions",
+        "ExternalNodeLivenessDetection",
+        "GenericEphemeralVolumes",
+        "HPAConfigurableSyncPeriod",
+        "HPAExternalMetricFallback",
+        "HPASelectionStrategy",
+        "HTTP3",
+        "HardenedExecRequests",
+        "ImageGCMaximumAge",
+        "InPlaceNodeResourceResize",
+        "InPlacePodVerticalScalingExclusiveCPUS",
+        "InTreePluginCephfsUnregister",
+        "InTreePluginRbdUnregister",
+        "InTreePlugin{vendor}Unregister",
+        "InformerMetrics",
+        "KMSUID",
+        "KUBECTL_COMMAND_HEADERS",
+        "KUBECTL_DEBUG_CUSTOM_PROFILE",
+        "KUBECTL_ERROR_CODES",
+        "KUBECTL_KUBERC",
+        "KUBECTL_KYAML",
+        "KUBECTL_PORT_FORWARD_WEBSOCKETS",
+        "KUBECTL_REMOTE_COMMAND_WEBSOCKETS",
+        "KubeAPIServerWorkloadsTrust",
+        "KubeServingCertificatesSigner",
+        "KubeletCertCNValidation",
+        "KubeletPodResourcesDynamicResource",
+        "KubeletWatchdogDiagnostics",
+        "LeaderElectionRecovery",
+        "LegacyNodeRunOnceMode",
+        "ManagedFieldsOptOut",
+        "ManagedFieldsOptOutClient",
+        "MemoryManagerDriftTolerance",
+        "MixedProtocolLBSVC",
+        "MonitorInformerStaleness",
+        "MutableContainerProbes",
+        "NA",
+        "NodeMemoryReservationPolicy",
+        "NodeSystemPartition",
+        "None",
+        "PSINodeCondition",
+        "PerHandlerReadWriteTimeout",
+        "PerHandlerReadWriteTimeoutWithPanic",
+        "PerPodPIDLimit",
+        "PodDefaultNetwork",
+        "PodDisruptionBudgetPodHealthyPolicy",
+        "PodFailurePolicyName",
+        "PodImplicitRootWarnings",
+        "PodLevelCheckpointRestore",
+        "PodLevelResourcesEphemeralStorage",
+        "PodLevelResourcesFixKubeletQOSClass",
+        "PodLevelResourcesFixUpdateDefaulting",
+        "PodTopologyLabelAdmission",
+        "ReduceDefaultCrashLoopBackoffDecay",
+        "RequestCostAggregation",
+        "SchedulerPreEnqueuePodStatus",
+        "SchedulerPreQueueingHints",
+        "SecurityProfileOCI",
+        "SidecarsRestartableDuringPodTermination",
+        "StaleControllerConsistency",
+        "StructuredAuthorizationConfig",
+        "VolumeSnapshotTopology",
+        "WatchCacheStallResume",
+        "WorkloadControlledSwap",
+        "WorkloadWithDeployment",
+        "n/a",
+        "setHostnameAsFQDN"
+      ]
+    },
+    "n_docs_gates": 489,
+    "n_kep_files": 643,
+    "n_keps": 643,
+    "n_sample": 238,
+    "parse_errors": []
+  },
+  "verdicts": {
+    "P1": "HELD",
+    "P1_all_gates": "HELD",
+    "P2": "FAILED",
+    "P3": "HELD",
+    "P4": "HELD"
+  }
+}
